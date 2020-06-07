@@ -1,0 +1,13 @@
+GET http://localhost:3000/pokemon
+// get all pokemons
+
+###
+
+GET http://localhost:3000/pokemon/1
+// get one pokemon by id
+
+###
+
+GET http://localhost:3000/pokemon/1/name
+// get one specific info about a pokemon
+// can use name | type | base
