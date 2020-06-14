@@ -34,6 +34,7 @@ exports.me = async (req, res) => {
     let player = await Player.findOne({ email: req.player.email }).populate('games')
     if (!player) return res.status(400).send('Invalid request')
     res.send({
+        _id: player._id,
         username: player.username,
         email: player.email,
         games: player.games
